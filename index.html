@@ -1,71 +1,96 @@
-<!DOCTYPE html>
-<html lang="ja">
-  <head>
-    <meta charset="utf-8">
-    <title>テストフォーム</title>
-  </head>
-  <body>
-    <script type="text/javascript">
-      function check() {
-        const num = document.getElementsByName("entry.51873055");
-        const alpha = document.getElementsByName("entry.1340648144");
-        const chk = document.getElementsByClassName("checks");
-
-        let numCount = 0;
-        let alphaCount = 0;
-        let chkCount = 0;
-
-        for (let i = 0; i < num.length; i++) {
-          if (num[i].checked) {
-            numCount++;
-          }
-        }
-
-        if (numCount > 2) {
-          alert("数字は2つまで選択して下さい");
-        }
-
-        for (let i = 0; i < alpha.length; i++) {
-          if (alpha[i].checked) {
-            alphaCount++;
-          }
-        }
-
-        if (alphaCount > 2) {
-          alert("アルファベットは2つまで選択して下さい");
-        }
-
-        for (let i = 0; i < chk.length; i++) {
-          if (chk[i].checked) {
-            chkCount++;
-          }
-        }
-
-        if (chkCount > 3) {
-          alert("全体で3つまで選択して下さい");
-        }
-      }
-    </script>
-    <form name="form1" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfrmfiKnkStA5qr2Iv_MnEFG6jDIV1rm6eN0RgPr_pxnRNn9A/formResponse">
-      <table>
-        <tr>
-        <td>
-          数字<br>
-          <input class="checks" type="checkbox" name="entry.51873055" value="1">1<br>
-          <input class="checks" type="checkbox" name="entry.51873055" value="2">2<br>
-          <input class="checks" type="checkbox" name="entry.51873055" value="3">3<br>
-          <input class="checks" type="checkbox" name="entry.51873055" value="4">4<br>
-        </td>
-          <td>
-          アルファベット<br>
-          <input class="checks" type="checkbox" name="entry.1340648144" value="A">A<br>
-          <input class="checks" type="checkbox" name="entry.1340648144" value="B">B<br>
-          <input class="checks" type="checkbox" name="entry.1340648144" value="C">C<br>
-          <input class="checks" type="checkbox" name="entry.1340648144" value="D">D<br>
-          </td>
-        </tr>
-      </table>
-      <input type="submit" value="送信" onclick="check();">
-    </form>
-  </body>
+<html>
+    <head>
+        <link rel="stylesheet" href="./main.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script type="text/javascript" src="./main.js"></script>
+    </head>
+    <body bgcolor="#303033">
+        <div class="inputWithIcon">
+            <input type="text" placeholder="お名前">
+            <i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
+        </div>
+        <br>
+        <div id="periodMessage"></div>
+        <div id="groupMessage"></div>
+        <br>
+        <img src="./LINE1.png">
+        <br><br>
+        <div class="period1">
+            <div class="group1">
+                <input id="shoken1" name="Googleフォームから貼り付け" type="checkbox">
+                <label class="checkbox_label" for="shoken1">shoken1</label>
+            </div>
+            <div class="group2">
+                <input id="ichigeki" name="Googleフォームから貼り付け" type="checkbox">
+                <label class="checkbox_label" for="ichigeki">ichigeki</label>
+            </div>
+            <div class="group3">
+                <input id="miniGame" name="Googleフォームから貼り付け" type="checkbox">
+                <label class="checkbox_label" for="miniGame">miniGame</label>
+            </div>
+            <div class="group2">
+                <input id="shokenTA" name="Googleフォームから貼り付け" type="checkbox">
+                <label class="checkbox_label" for="shokenTA">shokenTA</label>
+            </div>
+        </div>
+        <br><br><br><br>
+        <img src="./LINE2.png">
+        <br><br>
+        <div class="period2">
+            <div class="group2">
+                <input id="longTA" name="Googleフォームから貼り付け" type="checkbox">
+                <label class="checkbox_label" for="longTA">longTA</label>
+            </div>
+            <div class="group3">
+                <input id="shoken564" name="Googleフォームから貼り付け" type="checkbox">
+                <label class="checkbox_label" for="shoken564">shoken564</label>
+            </div>
+            <div class="group4">
+                <input id="boss" name="Googleフォームから貼り付け" type="checkbox">
+                <label class="checkbox_label" for="boss">boss</label>
+            </div>
+            <div class="group2">
+                <input id="GiveTake" name="Googleフォームから貼り付け" type="checkbox">
+                <label class="checkbox_label" for="GiveTake">GiveTake</label>
+            </div>
+        </div>
+        <br><br><br><br>
+        <img src="./LINE3.png">
+        <br><br>
+        <div class="period3">
+            <div class="group2">
+                <input id="shortTA" name="Googleフォームから貼り付け" type="checkbox">
+                <label class="checkbox_label" for="shortTA">shortTA</label>
+            </div>
+            <div class="group4">
+                <input id="taiQ" name="Googleフォームから貼り付け" type="checkbox">
+                <label class="checkbox_label" for="taiQ">taiQ</label>
+            </div>
+            <div class="group2">
+                <input id="MadeinWario" name="Googleフォームから貼り付け" type="checkbox">
+                <label class="checkbox_label" for="MadeinWario">MadeinWario</label>
+            </div>
+            <div class="group3">
+                <input id="torehan" name="Googleフォームから貼り付け" type="checkbox">
+                <label class="checkbox_label" for="torehan">torehan</label>
+            </div>
+        </div>
+        <br><br><br><br>
+        <img src="./LINE4.png">
+        <br><br>
+        <div class="period4">
+            <div class="group4">
+                <input id="harige" name="Googleフォームから貼り付け" type="checkbox">
+                <label class="checkbox_label" for="harige">harige</label>
+            </div>
+            <div class="group3">
+                <input id="death" name="Googleフォームから貼り付け" type="checkbox">
+                <label class="checkbox_label" for="death">death</label>
+            </div>
+            <div class="group1">
+                <input id="shoken2" name="Googleフォームから貼り付け" type="checkbox">
+                <label class="checkbox_label" for="shoken2">shoken2</label>
+            </div>
+        </div>
+    </body>
 </html>

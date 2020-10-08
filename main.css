@@ -1,0 +1,325 @@
+/** 第1期間 **/
+/* 初見1(未選択状態) */
+#shoken1 + label:after {
+    content: url(./アンケボタン/ボタン/01_shoken1.png);
+}
+/* 初見1(選択状態) */
+#shoken1:checked + label:after {
+    content: url(./アンケボタン/選ばれた/01b_shoken1.png);
+}
+/* 一撃(未選択状態) */
+#ichigeki + label:after {
+    content: url(./アンケボタン/ボタン/02_ichigeki.png);
+}
+/* 一撃(選択状態) */
+#ichigeki:checked + label:after {
+    content: url(./アンケボタン/選ばれた/02b_ichigeki.png);
+}
+/* 一撃1 */
+#ichigeki1 + label:after {
+    content: url(./ss/一撃/I_wanna_conqure_the_blow_game_a.png);
+}
+/* ミニゲーム(未選択状態) */
+#miniGame + label:after {
+    content: url(./アンケボタン/ボタン/03_miniGame.png);
+}
+/* ミニゲーム(選択状態) */
+#miniGame:checked + label:after {
+    content: url(./アンケボタン/選ばれた/03b_miniGame.png);
+}
+/* 初見TA(未選択状態) */
+#shokenTA + label:after {
+    content: url(./アンケボタン/ボタン/04_shokenTA.png);
+}
+/* 初見TA(選択状態) */
+#shokenTA:checked + label:after {
+    content: url(./アンケボタン/選ばれた/04b_shokenTA.png);
+}
+/** 第2期間 **/
+/* 長TA(未選択状態) */
+#longTA + label:after {
+    content: url(./アンケボタン/ボタン/05_longTA.png);
+}
+/* 長TA(選択状態) */
+#longTA:checked + label:after {
+    content: url(./アンケボタン/選ばれた/05b_longTA.png);
+}
+/* 初見殺し(未選択状態) */
+#shoken564 + label:after {
+    content: url(./アンケボタン/ボタン/06_shoken564.png);
+}
+/* 初見殺し(選択状態) */
+#shoken564:checked + label:after {
+    content: url(./アンケボタン/選ばれた/06b_shoken564.png);
+}
+/* ボス(未選択状態) */
+#boss + label:after {
+    content: url(./アンケボタン/ボタン/07_boss.png);
+}
+/* ボス(選択状態) */
+#boss:checked + label:after {
+    content: url(./アンケボタン/選ばれた/07b_boss.png);
+}
+/* Give&Take(未選択状態) */
+#GiveTake + label:after {
+    content: url(./アンケボタン/ボタン/08_Give&Take.png);
+}
+/* Give&Take(選択状態) */
+#GiveTake:checked + label:after {
+    content: url(./アンケボタン/選ばれた/08b_Give&Take.png);
+}
+/** 第3期間 **/
+/* 短TA(未選択状態) */
+#shortTA + label:after {
+    content: url(./アンケボタン/ボタン/09_shortTA.png);
+}
+/* 短TA(選択状態) */
+#shortTA:checked + label:after {
+    content: url(./アンケボタン/選ばれた/09b_shortTA.png);
+}
+/* 耐久(未選択状態) */
+#taiQ + label:after {
+    content: url(./アンケボタン/ボタン/10_taiQ.png);
+}
+/* 耐久(選択状態) */
+#taiQ:checked + label:after {
+    content: url(./アンケボタン/選ばれた/10b_taiQ.png);
+}
+/* メイドインワリオ(未選択状態) */
+#MadeinWario + label:after {
+    content: url(./アンケボタン/ボタン/11_MadeinWario.png);
+}
+/* メイドインワリオ(選択状態) */
+#MadeinWario:checked + label:after {
+    content: url(./アンケボタン/選ばれた/11b_MadeinWario.png);
+}
+/* トレハン(未選択状態) */
+#torehan + label:after {
+    content: url(./アンケボタン/ボタン/12_torehan.png);
+}
+/* トレハン(選択状態) */
+#torehan:checked + label:after {
+    content: url(./アンケボタン/選ばれた/12b_torehan.png);
+}
+/** 第4期間 **/
+/* 針ゲ(未選択状態) */
+#harige + label:after {
+    content: url(./アンケボタン/ボタン/13_harige.png);
+}
+/* 針ゲ(選択状態) */
+#harige:checked + label:after {
+    content: url(./アンケボタン/選ばれた/13b_harige.png);
+}
+/* デス数(未選択状態) */
+#death + label:after {
+    content: url(./アンケボタン/ボタン/14_death.png);
+}
+/* デス数(選択状態) */
+#death:checked + label:after {
+    content: url(./アンケボタン/選ばれた/14b_death.png);
+}
+/* 初見2(未選択状態) */
+#shoken2 + label:after {
+    content: url(./アンケボタン/ボタン/15_shoken2.png);
+}
+/* 初見2(選択状態) */
+#shoken2:checked + label:after {
+    content: url(./アンケボタン/選ばれた/15b_shoken2.png);
+}
+/* チェックボックス非表示 */
+#shoken1,
+#ichigeki,
+#miniGame,
+#shokenTA,
+#longTA,
+#shoken564,
+#boss,
+#GiveTake,
+#shortTA,
+#taiQ,
+#MadeinWario,
+#torehan,
+#harige,
+#death,
+#shoken2 {
+    display: none;
+}
+/* 選択肢文字非表示 */
+#shoken1 + label,
+#ichigeki + label,
+#miniGame + label,
+#shokenTA + label,
+#longTA + label,
+#shoken564 + label,
+#boss + label,
+#GiveTake + label,
+#shortTA + label,
+#taiQ + label,
+#MadeinWario + label,
+#torehan + label,
+#harige + label,
+#death + label,
+#shoken2 + label {
+    font-size: 0;
+}
+/* --- 第1期間の定義 --- */
+.period1 {
+    margin    :0px;            /* マージン */
+    box-sizing:border-box;     /* 長さ */
+    background:#303033;           /* 背景色 */
+    border    :0px solid #fff; /* 枠線 */
+    width     :1380px;         /* 幅 */
+    max-height:210px;          /* 高さ */
+    animation :boxAnime 10s linear infinite alternate;
+
+    /* ▼ FlexBoxの定義 */
+    display  :flex; /* FlexBox定義 */
+    flex-wrap:wrap; /* 折り返し定義 */
+}
+/* --- 第1期間の個別定義 --- */
+.period1 div {
+    box-sizing:border-box;     /* 長さ */
+    background:#303033;        /* 背景色 */
+    border    :0px solid #fff; /* 枠線 */
+    width     :60px;           /* 幅 */
+    height    :60px;           /* 高さ */
+    margin    :1px;            /* 間隔 */
+
+    /* ▼ FlexBoxの各ボックス均等自動幅 */
+    flex-grow:1; /* 各BOXを均等に割当 */
+}
+/* --- 第2期間の定義 --- */
+.period2 {
+    margin    :0px;            /* マージン */
+    box-sizing:border-box;     /* 長さ */
+    background:#303033;           /* 背景色 */
+    border    :0px solid #fff; /* 枠線 */
+    width     :1380px;         /* 幅 */
+    max-height:210px;          /* 高さ */
+    animation :boxAnime 10s linear infinite alternate;
+
+    /* ▼ FlexBoxの定義 */
+    display  :flex; /* FlexBox定義 */
+    flex-wrap:wrap; /* 折り返し定義 */
+}
+/* --- 第2期間の個別定義 --- */
+.period2 div {
+    box-sizing:border-box;     /* 長さ */
+    background:#303033;        /* 背景色 */
+    border    :0px solid #fff; /* 枠線 */
+    width     :60px;           /* 幅 */
+    height    :60px;           /* 高さ */
+    margin    :1px;            /* 間隔 */
+
+    /* ▼ FlexBoxの各ボックス均等自動幅 */
+    flex-grow:1; /* 各BOXを均等に割当 */
+}
+/* --- 第3期間の定義 --- */
+.period3 {
+    margin    :0px;            /* マージン */
+    box-sizing:border-box;     /* 長さ */
+    background:#303033;           /* 背景色 */
+    border    :0px solid #fff; /* 枠線 */
+    width     :1380px;         /* 幅 */
+    max-height:210px;          /* 高さ */
+    animation :boxAnime 10s linear infinite alternate;
+
+    /* ▼ FlexBoxの定義 */
+    display  :flex; /* FlexBox定義 */
+    flex-wrap:wrap; /* 折り返し定義 */
+}
+/* --- 第3期間の個別定義 --- */
+.period3 div {
+    box-sizing:border-box;     /* 長さ */
+    background:#303033;        /* 背景色 */
+    border    :0px solid #fff; /* 枠線 */
+    width     :60px;           /* 幅 */
+    height    :60px;           /* 高さ */
+    margin    :1px;            /* 間隔 */
+
+    /* ▼ FlexBoxの各ボックス均等自動幅 */
+    flex-grow:1; /* 各BOXを均等に割当 */
+}
+/* --- 第4期間の定義 --- */
+.period4 {
+    margin    :0px;            /* マージン */
+    box-sizing:border-box;     /* 長さ */
+    background:#303033;           /* 背景色 */
+    border    :0px solid #fff; /* 枠線 */
+    width     :1380px;         /* 幅 */
+    max-height:210px;          /* 高さ */
+    animation :boxAnime 10s linear infinite alternate;
+
+    /* ▼ FlexBoxの定義 */
+    display  :flex; /* FlexBox定義 */
+    flex-wrap:wrap; /* 折り返し定義 */
+}
+/* --- 第4期間の個別定義 --- */
+.period4 div {
+    box-sizing:border-box;     /* 長さ */
+    background:#303033;        /* 背景色 */
+    border    :0px solid #fff; /* 枠線 */
+    width     :60px;           /* 幅 */
+    height    :60px;           /* 高さ */
+    margin    :1px;            /* 間隔 */
+
+    /* ▼ FlexBoxの各ボックス均等自動幅 */
+    flex-grow:1; /* 各BOXを均等に割当 */
+}
+#periodMessage,
+#groupMessage {
+    color:red;
+}
+/* 未チェックの選択肢を薄く表示 */
+#sample + label:after {
+    opacity: 1;
+}
+/* "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" */
+input[type="text"] {
+  width: 20%;
+  border: 2px solid #aaa;
+  border-radius: 4px;
+  margin: 8px 0;
+  outline: none;
+  padding: 8px;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+
+input[type="text"]:focus {
+  border-color: dodgerBlue;
+  box-shadow: 0 0 8px 0 dodgerBlue;
+}
+
+.inputWithIcon input[type="text"] {
+  padding-left: 40px;
+}
+
+.inputWithIcon {
+  position: relative;
+}
+
+.inputWithIcon i {
+  position: absolute;
+  left: 0;
+  top: 8px;
+  padding: 9px 8px;
+  color: #aaa;
+  transition: 0.3s;
+}
+
+.inputWithIcon input[type="text"]:focus + i {
+  color: dodgerBlue;
+}
+
+.inputWithIcon.inputIconBg i {
+  background-color: #aaa;
+  color: #fff;
+  padding: 9px 4px;
+  border-radius: 4px 0 0 4px;
+}
+
+.inputWithIcon.inputIconBg input[type="text"]:focus + i {
+  color: #fff;
+  background-color: dodgerBlue;
+}
