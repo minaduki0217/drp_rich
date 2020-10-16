@@ -15,10 +15,6 @@
 #ichigeki:checked + label:after {
     content: url(./アンケボタン/選ばれた/02b_ichigeki.png);
 }
-/* 一撃1 */
-#ichigeki1 + label:after {
-    content: url(./ss/一撃/I_wanna_conqure_the_blow_game_a.png);
-}
 /* ミニゲーム(未選択状態) */
 #miniGame + label:after {
     content: url(./アンケボタン/ボタン/03_miniGame.png);
@@ -126,6 +122,53 @@
 #shoken2:checked + label:after {
     content: url(./アンケボタン/選ばれた/15b_shoken2.png);
 }
+/** 一撃作品 **/
+/* 一撃1 */
+#ichigeki1 + label:after {
+    content: url(./gameTitle/ichigeki/ichigeki1.png);
+}
+/* 一撃2 */
+#ichigeki2 + label:after {
+    content: url(./gameTitle/ichigeki/ichigeki2.png);
+}
+/* 一撃3 */
+#ichigeki3 + label:after {
+    content: url(./gameTitle/ichigeki/ichigeki3.png);
+}
+/** 長TA作品 */
+/* I wanna be the Guy */
+#guy + label:after {
+    content: url(./gameTitle/longTA/guy.png);
+}
+#heavenTrap + label:after {
+    content: url(./gameTitle/longTA/heavenTrap.png);
+}
+#parallelWorld + label:after {
+    content: url(./gameTitle/longTA/parallelWorld.png);
+}
+#marathon + label:after {
+    content: url(./gameTitle/longTA/marathon.png);
+}
+#moon + label:after {
+    content: url(./gameTitle/longTA/moon.png);
+}
+/** 短TA作品 **/
+/* I wanna be the Fangame */
+#fangame + label:after {
+    content: url(./gameTitle/shortTA/fangame.png);
+}
+/* I wanna be the GB */
+#gb + label:after {
+    content: url(./gameTitle/shortTA/gb.png);
+}
+/* I wanna be the LoveTrap */
+#loveTrap + label:after {
+    content: url(./gameTitle/shortTA/loveTrap.png);
+}
+/* I wanna go BANANAS! */
+#bananas + label:after {
+    content: url(./gameTitle/shortTA/bananas.png);
+}
 /* チェックボックス非表示 */
 #shoken1,
 #ichigeki,
@@ -141,26 +184,20 @@
 #torehan,
 #harige,
 #death,
-#shoken2 {
+#shoken2,
+#ichigeki1,
+#ichigeki2,
+#ichigeki3,
+#guy,
+#heavenTrap,
+#parallelWorld,
+#marathon,
+#moon,
+#fangame,
+#gb,
+#loveTrap,
+#bananas {
     display: none;
-}
-/* 選択肢文字非表示 */
-#shoken1 + label,
-#ichigeki + label,
-#miniGame + label,
-#shokenTA + label,
-#longTA + label,
-#shoken564 + label,
-#boss + label,
-#GiveTake + label,
-#shortTA + label,
-#taiQ + label,
-#MadeinWario + label,
-#torehan + label,
-#harige + label,
-#death + label,
-#shoken2 + label {
-    font-size: 0;
 }
 /* --- 第1期間の定義 --- */
 .period1 {
@@ -271,7 +308,33 @@
     color:red;
 }
 /* 未チェックの選択肢を薄く表示 */
-#sample + label:after {
+#ichigeki1 + label:after,
+#ichigeki2 + label:after,
+#ichigeki3 + label:after,
+#guy + label:after,
+#heavenTrap + label:after,
+#parallelWorld + label:after,
+#marathon + label:after,
+#moon + label:after,
+#fangame + label:after,
+#gb + label:after,
+#loveTrap + label:after,
+#bananas + label:after {
+    opacity: 0.2;
+}
+/* 未チェックの選択肢を薄く表示 */
+#ichigeki1:checked + label:after,
+#ichigeki2:checked + label:after,
+#ichigeki3:checked + label:after,
+#fangame:checked + label:after,
+#gb:checked + label:after,
+#loveTrap:checked + label:after,
+#bananas:checked + label:after,
+#guy:checked + label:after,
+#heavenTrap:checked + label:after,
+#parallelWorld:checked + label:after,
+#marathon:checked + label:after,
+#moon:checked + label:after {
     opacity: 1;
 }
 /* "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" */
