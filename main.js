@@ -40,6 +40,9 @@ $(function() {
         $("#groupMessage").text("");
         $("#other1Message").text("");
         $("#other2Message").text("");
+        $("#other3Message").text("");
+        $("#other4Message").text("");
+        $("#other5Message").text("");
         var period1Cnt = $('.period1 :checked').length;
         var period2Cnt = $('.period2 :checked').length;
         var period3Cnt = $('.period3 :checked').length;
@@ -48,6 +51,9 @@ $(function() {
         var group2Cnt = $('.group2 :checked').length;
         var group3Cnt = $('.group3 :checked').length;
         var group4Cnt = $('.group4 :checked').length;
+        var ichigekiCnt = $('.ichigekiGroup :checked').length;
+        var longTACnt = $('.longTAGroup :checked').length;
+        var shortTACnt = $('.shortTAGroup :checked').length;
         
         if (period1Cnt > 2) {
             $(this).prop('checked', false);
@@ -89,6 +95,21 @@ $(function() {
             $("#groupMessage").text("黄色の枠は1つしか選択できません。（[ボス][耐久][針ゲ]）");
             errorFlg = true;
         }
+        if (ichigekiCnt > 1) {
+            $(this).prop('checked', false);
+            $("#other1Message").text("一撃作品は1つしか選択できません。");
+            errorFlg = true;
+        }
+        if (longTACnt > 1) {
+            $(this).prop('checked', false);
+            $("#other2Message").text("一撃作品は1つしか選択できません。");
+            errorFlg = true;
+        }
+        if (shortTACnt > 1) {
+            $(this).prop('checked', false);
+            $("#other3Message").text("一撃作品は1つしか選択できません。");
+            errorFlg = true;
+        }
 
         if(errorFlg == false) {
             if($("#ichigeki").prop("checked") == true) {
@@ -118,14 +139,26 @@ $(function() {
 $(function() {
     $('form').submit(function() {
         var errorFlg = false;
+        if($("#ichigeki").prop("checked") == true) {
+            $("#other1Message").text("一撃を選択した場合、一撃作品を1つ選択して下さい。");
+            errorFlg = true;
+        }
+        if($("#longTA").prop("checked") == true) {
+            $("#other2Message").text("長TAを選択した場合、長TA作品を1つ選択して下さい。");
+            errorFlg = true;
+        }
+        if($("#shortTA").prop("checked") == true) {
+            $("#other3Message").text("短TAを選択した場合、短TA作品を1つ選択して下さい。");
+            errorFlg = true;
+        }
         if($("#GiveTake").prop("checked") == true) {
             if($("#giveAndTakePartnerName").val() == "") {
-              $("#other1Message").text("Give&Takeを選択した場合、パートナーは入力必須です。");
+              $("#other4Message").text("Give&Takeを選択した場合、パートナーは入力必須です。");
               errorFlg = true;
             }
         }
         if($("#agree").prop("checked") == false) {
-            $("#other2Message").text("規約に同意して頂けない場合、大会に参加出来ません。");
+            $("#other5Message").text("規約に同意して頂けない場合、大会に参加出来ません。");
             errorFlg = true;
         }
         if(errorFlg == true) {

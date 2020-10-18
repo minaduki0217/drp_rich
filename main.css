@@ -359,7 +359,10 @@
 #periodMessage,
 #groupMessage,
 #other1Message,
-#other2Message {
+#other2Message,
+#other3Message,
+#other4Message,
+#other5Message {
     color:#ff6347;
 }
 /* 未チェックの選択肢を薄く表示 */
