@@ -7,6 +7,8 @@ $(function () {
         $(".shortTAGroup").css("display", "none");
         // 長TA作品を非表示
         $(".longTAGroup").css("display", "none");
+        // Give&Takeパートナーを非表示
+        $(".giveAndTakePartner").css("display", "none");
     });
 
     function clearForm (form) {
@@ -28,12 +30,16 @@ $(function() {
     $(".shortTAGroup").css("display", "none");
     // 長TA作品を非表示
     $(".longTAGroup").css("display", "none");
+    // Give&Takeパートナーを非表示
+    $(".giveAndTakePartner").css("display", "none");
 
     $('input:checkbox').change(function() {
         var errorFlg = false;
         // 一撃作品の表示・非表示切替
         $("#periodMessage").text("");
         $("#groupMessage").text("");
+        $("#other1Message").text("");
+        $("#other2Message").text("");
         var period1Cnt = $('.period1 :checked').length;
         var period2Cnt = $('.period2 :checked').length;
         var period3Cnt = $('.period3 :checked').length;
@@ -100,6 +106,30 @@ $(function() {
             } else {
                 $(".longTAGroup").css("display", "none");
             }
+            if($("#GiveTake").prop("checked") == true) {
+                $(".giveAndTakePartner").css("display", "block");
+            } else {
+                $(".giveAndTakePartner").css("display", "none");
+            }
+        }
+    })
+});
+
+$(function() {
+    $('form').submit(function() {
+        var errorFlg = false;
+        if($("#GiveTake").prop("checked") == true) {
+            if($("#giveAndTakePartnerName").val() == "") {
+              $("#other1Message").text("Give&Takeを選択した場合、パートナーは入力必須です。");
+              errorFlg = true;
+            }
+        }
+        if($("#agree").prop("checked") == false) {
+            $("#other2Message").text("規約に同意して頂けない場合、大会に参加出来ません。");
+            errorFlg = true;
+        }
+        if(errorFlg == true) {
+            return false;
         }
     })
 });

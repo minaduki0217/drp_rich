@@ -15,11 +15,17 @@
                 <i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
             </div>
             <br>
-            <div id="periodMessage"></div>
-            <div id="groupMessage"></div>
+            <div class="messageArea">
+                <div id="periodMessage"></div>
+                <div id="groupMessage"></div>
+                <div id="other1Message"></div>
+                <div id="other2Message"></div>
+            </div>
             <br>
-            <img src="./LINE1.png">
-            <br><br>
+            <div class="lineArea">
+                <img src="./LINE1.png">
+            </div>
+            <br>
             <div class="period1">
                 <div class="group1">
                     <input id="shoken1" name="entry.923447280" type="checkbox" value="初見１">
@@ -38,9 +44,11 @@
                     <label class="checkbox_label" for="shokenTA"></label>
                 </div>
             </div>
-            <br><br><br><br>
-            <img src="./LINE2.png">
-            <br><br>
+            <br>
+            <div class="lineArea">
+                <img src="./LINE2.png">
+            </div>
+            <br>
             <div class="period2">
                 <div class="group2">
                     <input id="longTA" name="entry.2071281938" type="checkbox" value="長ＴＡ">
@@ -59,9 +67,11 @@
                     <label class="checkbox_label" for="GiveTake"></label>
                 </div>
             </div>
-            <br><br><br><br>
-            <img src="./LINE3.png">
-            <br><br>
+            <br>
+            <div class="lineArea">
+                <img src="./LINE3.png">
+            </div>
+            <br>
             <div class="period3">
                 <div class="group2">
                     <input id="shortTA" name="entry.127699423" type="checkbox" value="短ＴＡ">
@@ -80,9 +90,11 @@
                     <label class="checkbox_label" for="torehan"></label>
                 </div>
             </div>
-            <br><br><br><br>
-            <img src="./LINE4.png">
-            <br><br>
+            <br>
+            <div class="lineArea">
+                <img src="./LINE4.png">
+            </div>
+            <br>
             <div class="period4">
                 <div class="group4">
                     <input id="harige" name="entry.1641568558" type="checkbox" value="針ゲ">
@@ -97,7 +109,7 @@
                     <label class="checkbox_label" for="shoken2"></label>
                 </div>
             </div>
-            <br><br><br><br>
+            <br><br>
             <div class="ichigekiGroup">
                 <img src="./itigekiLINE.png">
                 <br><br>
@@ -107,6 +119,7 @@
                 <label class="checkbox_label" for="ichigeki2"></label>
                 <input id="ichigeki3" name="entry.903283163" type="checkbox" value="一撃３">
                 <label class="checkbox_label" for="ichigeki3"></label>
+                <br><br>
             </div>
             <div class="longTAGroup">
                 <img src="./longTALINE.png">
@@ -121,6 +134,7 @@
                 <label class="checkbox_label" for="parallelWorld"></label>
                 <input id="marathon" name="entry.569830237" type="checkbox" value="Marathon">
                 <label class="checkbox_label" for="marathon"></label>
+                <br><br>
             </div>
             <div class="shortTAGroup">
                 <img src="./shortTALINE.png">
@@ -134,18 +148,20 @@
                 <input id="bananas" name="entry.326818744" type="checkbox" value="BANANAS!">
                 <label class="checkbox_label" for="bananas"></label>
             </div>
-            <div class="inputWithIcon">
-                <input type="text" placeholder="Give&Take パートナー" name="entry.1177558956">
+            <div class="giveAndTakePartner">
+                <input id="giveAndTakePartnerName" type="text" placeholder="Give&Take パートナー（お名前）" name="entry.1177558956">
                 <i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i><br>
             </div>
             <div class="agreeArea">
                 <br><br>
                 <input id="agree" name="entry.243073514" type="checkbox" value="はい">
-                <label class="checkbox_label" style="color:red" for="agree">参加条件をよく読んだ上で規約に同意する。</label>
+                <label class="checkbox_label" style="color:#ff6347" for="agree">参加条件をよく読んだ上で規約に同意する。</label>
             </div>
-            <br><br>
-            <button name="action" value="send" type="submit">参加申請</button>
-            <button name="action" value="clear" type="button" class="clear-button">クリア</button>
+            <div class="buttonArea">
+                <br><br>
+                <button name="action" value="send" type="submit">参加申請</button>
+                <button name="action" value="clear" type="button" class="clear-button">クリア</button>
+            </div>
         </form>
     </body>
 </html>
