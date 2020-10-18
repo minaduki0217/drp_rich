@@ -160,6 +160,10 @@ $(function() {
         var period3Cnt = $('.period3 :checked').length;
         var period4Cnt = $('.period4 :checked').length;
         var periodAllCnt = period1Cnt + period2Cnt + period3Cnt + period4Cnt;
+        var ichigekiCnt = $('.ichigekiGroup :checked').length;
+        var longTACnt = $('.longTAGroup :checked').length;
+        var shortTACnt = $('.shortTAGroup :checked').length;
+
         if($("#name").val() == "") {
               $("#other1Message").text("お名前は入力必須です。");
               errorFlg = true;
@@ -173,16 +177,22 @@ $(function() {
               errorFlg = true;
         }
         if($("#ichigeki").prop("checked") == true) {
-            $("#other4Message").text("一撃を選択した場合、一撃作品を1つ選択して下さい。");
-            errorFlg = true;
+            if (ichigekiCnt == 0) {
+                $("#other4Message").text("一撃を選択した場合、一撃作品を1つ選択して下さい。");
+                errorFlg = true;
+            }
         }
         if($("#longTA").prop("checked") == true) {
-            $("#other5Message").text("長TAを選択した場合、長TA作品を1つ選択して下さい。");
-            errorFlg = true;
+            if (longTACnt == 0) {
+                $("#other5Message").text("長TAを選択した場合、長TA作品を1つ選択して下さい。");
+                errorFlg = true;
+            }
         }
         if($("#shortTA").prop("checked") == true) {
-            $("#other6Message").text("短TAを選択した場合、短TA作品を1つ選択して下さい。");
-            errorFlg = true;
+            if (shortTACnt == 0) {
+                $("#other6Message").text("短TAを選択した場合、短TA作品を1つ選択して下さい。");
+                errorFlg = true;
+            }
         }
         if($("#GiveTake").prop("checked") == true) {
             if($("#giveAndTakePartnerName").val() == "") {
