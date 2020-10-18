@@ -1,6 +1,17 @@
 $(function () {
     $(".clear-button").on("click", function () {
         clearForm(this.form);
+        $("#periodMessage").text("");
+        $("#groupMessage").text("");
+        $("#other1Message").text("");
+        $("#other2Message").text("");
+        $("#other3Message").text("");
+        $("#other4Message").text("");
+        $("#other5Message").text("");
+        $("#other6Message").text("");
+        $("#other7Message").text("");
+        $("#other8Message").text("");
+        $("#other9Message").text("");
         // 一撃作品を非表示
         $(".ichigekiGroup").css("display", "none");
         // 短TA作品を非表示
@@ -9,6 +20,7 @@ $(function () {
         $(".longTAGroup").css("display", "none");
         // Give&Takeパートナーを非表示
         $(".giveAndTakePartner").css("display", "none");
+        $('body,html').animate({ scrollTop: 0 }, 500);
     });
 
     function clearForm (form) {
@@ -116,6 +128,10 @@ $(function() {
             errorFlg = true;
         }
 
+        if(errorFlg == true) {
+            $('body,html').animate({ scrollTop: 0 }, 500);
+        }
+
         if(errorFlg == false) {
             if($("#ichigeki").prop("checked") == true) {
                 $(".ichigekiGroup").css("display", "block");
@@ -209,6 +225,7 @@ $(function() {
             errorFlg = true;
         }
         if(errorFlg == true) {
+            $('body,html').animate({ scrollTop: 0 }, 500);
             return false;
         }
     })
