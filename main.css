@@ -362,7 +362,11 @@
 #other2Message,
 #other3Message,
 #other4Message,
-#other5Message {
+#other5Message,
+#other6Message,
+#other7Message,
+#other8Message,
+#other9Message {
     color:#ff6347;
 }
 /* 未チェックの選択肢を薄く表示 */

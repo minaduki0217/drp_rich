@@ -43,10 +43,15 @@ $(function() {
         $("#other3Message").text("");
         $("#other4Message").text("");
         $("#other5Message").text("");
+        $("#other6Message").text("");
+        $("#other7Message").text("");
+        $("#other8Message").text("");
+        $("#other9Message").text("");
         var period1Cnt = $('.period1 :checked').length;
         var period2Cnt = $('.period2 :checked').length;
         var period3Cnt = $('.period3 :checked').length;
         var period4Cnt = $('.period4 :checked').length;
+        var periodAllCnt = period1Cnt + period2Cnt + period3Cnt + period4Cnt;
         var group1Cnt = $('.group1 :checked').length;
         var group2Cnt = $('.group2 :checked').length;
         var group3Cnt = $('.group3 :checked').length;
@@ -138,27 +143,59 @@ $(function() {
 
 $(function() {
     $('form').submit(function() {
+        $("#periodMessage").text("");
+        $("#groupMessage").text("");
+        $("#other1Message").text("");
+        $("#other2Message").text("");
+        $("#other3Message").text("");
+        $("#other4Message").text("");
+        $("#other5Message").text("");
+        $("#other6Message").text("");
+        $("#other7Message").text("");
+        $("#other8Message").text("");
+        $("#other9Message").text("");
         var errorFlg = false;
+        var period1Cnt = $('.period1 :checked').length;
+        var period2Cnt = $('.period2 :checked').length;
+        var period3Cnt = $('.period3 :checked').length;
+        var period4Cnt = $('.period4 :checked').length;
+        var periodAllCnt = period1Cnt + period2Cnt + period3Cnt + period4Cnt;
+        if($("#name").val() == "") {
+              $("#other1Message").text("お名前は入力必須です。");
+              errorFlg = true;
+        }
+        if($("#broadcastSite").val() == "") {
+              $("#other2Message").text("配信サイトURLは入力必須です。");
+              errorFlg = true;
+        }
+        if($("#discordID").val() == "") {
+              $("#other3Message").text("Discord IDは入力必須です。");
+              errorFlg = true;
+        }
         if($("#ichigeki").prop("checked") == true) {
-            $("#other1Message").text("一撃を選択した場合、一撃作品を1つ選択して下さい。");
+            $("#other4Message").text("一撃を選択した場合、一撃作品を1つ選択して下さい。");
             errorFlg = true;
         }
         if($("#longTA").prop("checked") == true) {
-            $("#other2Message").text("長TAを選択した場合、長TA作品を1つ選択して下さい。");
+            $("#other5Message").text("長TAを選択した場合、長TA作品を1つ選択して下さい。");
             errorFlg = true;
         }
         if($("#shortTA").prop("checked") == true) {
-            $("#other3Message").text("短TAを選択した場合、短TA作品を1つ選択して下さい。");
+            $("#other6Message").text("短TAを選択した場合、短TA作品を1つ選択して下さい。");
             errorFlg = true;
         }
         if($("#GiveTake").prop("checked") == true) {
             if($("#giveAndTakePartnerName").val() == "") {
-              $("#other4Message").text("Give&Takeを選択した場合、パートナーは入力必須です。");
+              $("#other7Message").text("Give&Takeを選択した場合、パートナーは入力必須です。");
               errorFlg = true;
             }
         }
+        if (periodAllCnt == 0) {
+            $("#other8Message").text("競技種目は最低でも1つ以上選択して下さい。");
+            errorFlg = true;
+        }
         if($("#agree").prop("checked") == false) {
-            $("#other5Message").text("規約に同意して頂けない場合、大会に参加出来ません。");
+            $("#other9Message").text("規約に同意して頂けない場合、大会に参加出来ません。");
             errorFlg = true;
         }
         if(errorFlg == true) {
